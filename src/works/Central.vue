@@ -24,7 +24,7 @@
       <expandable-image :close-on-background-click="true" :src="require('../assets/central/_MG_6968.jpeg')"/>
     </p>
     <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="require('../assets/central/Peça Central Prévia Multiverso 30-08-18-3.jpg')"/>
+      <expandable-image :close-on-background-click="true" :src="require('../assets/central/Peça Central Prévia Multiverso 30-08-18-3.jpg')"/>
     </p>
     <p class='row'>
       <expandable-image :close-on-background-click="true" :src="require('../assets/central/triangulo.jpeg')"/>
