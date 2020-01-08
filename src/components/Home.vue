@@ -3,14 +3,10 @@
     <div class="about about-left">
       <img class="profile" :src="require('../assets/profile.png')"/>
       <p>alberto.harres@gmail.com</p>
-      <a target="_" href="https://www.instagram.com/mneunomne/" class="fa fa-instagram"></a>
+      <a target="_" href="https://www.instagram.com/mneu_nomne/" class="fa fa-instagram"></a>
       <a target="_" href="https://github.com/mneu_nomne" class="fa fa-github"></a>
     </div>
-    <div class="about about-right">
-      <h1>Alberto Harres</h1>
-      <p>Artista e Desenvolvedor. Explorando diversas linguagens, das lógicas às poeticas. Tenho conhecimento na área de programação de interfaces interativas e na sua conexão com ideias e conceitos.</p>
-      <p>Formado em Artes Visuais na UFRJ, atua na interceção entre arte e tecnologia desde 2012, </p>
-      <p>Algumas das tecnologias com que trabalho: OpenFrameworks (C++), Processing (Java), VueJS, ReactJS, A-Frame, Unity3d, Arduíno, Python, SuperCollider e etc.</p>
+    <div class="about about-right" v-html="$t('about_text')">
     </div>
   </div>
 </template>

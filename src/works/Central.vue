@@ -1,14 +1,7 @@
 <template>
   <div class="inner-cont">
-    <div class='row'>
-      <h1>Central</h1>
-    </div>
-    <p class="row">
-      Projeção mapeada e tecnologia para o espetáculo itinerante Central - uma peça paisagem em tantos movimentos da <a href="https://www.instagram.com/companhiavolante/">Companhia Volante</a>
-    </p>
-    <p class="row">
-      2019
-    </p>
+    <div class="row" v-html="$t('central.title')"/>
+    <div class="row" v-html="$t('central.text')"/>
     <p class="row">
       <video width="720" height="405" controls>
         <source :src="require('../assets/central/MVI_6938-SITE.mp4')" type="video/mp4"/> 

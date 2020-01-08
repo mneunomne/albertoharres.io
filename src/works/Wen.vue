@@ -1,25 +1,12 @@
 <template>
   <div class="inner-cont">
-    <div class='row'>
-      <h1>When Speaking of Tongues</h1>
-      <p>
-        <b>Multimedia show made in collaboration with <a href="http://www.lotuslien.info/">Lotus Lien.</a></b>
-      </p>
-      <p>
-        "When speaking of tongues" consisted of a range of experiments revolving around the relationship between body and language using different media: dance performance with kinect-based text projection, a VR instalation together with multiple drawings and video-mappings.
-      </p>
-      <p>
-        Dance performance with kinect-based projection. Performers Maria Koffman and Randy De La Cruz. 
-      </p>
-      <p>
-        2017, Cooper Union, New York City.
-      </p>
-    </div>
+    <div class="row" v-html="$t('wen.title')"/>
+    <div class="row" v-html="$t('wen.text')"/>
     <p class='row'>
       <img :src="require('../assets/wen/caracters.jpg')"/>
     </p>
     <p class="row">
-      Virtual Reality emulating the exibition itself but invaded by 3d chinese dancing characters.
+      {{ $t('wen.vr') }}
     </p>
     <p class="row">
       <video width="720" height="405" controls>

@@ -21,11 +21,6 @@
 <script>
 export default {
   name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
   methods: {
     changeLocale (lang) {
       this.$root.$i18n.locale = lang

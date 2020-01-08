@@ -1,11 +1,7 @@
 <template>
   <div class="inner-cont">
-    <div class='row'>
-      <h1>Mapeamento</h1>
-    </div>
-    <p class='row'>
-      Experimento web utilizando a localização do usuário para desenhar linhas sobre mapas.
-    </p>
+    <div class="row" v-html="$t('mapeamento.title')"/>
+    <div class="row" v-html="$t('mapeamento.text')"/>
     <p class='row' v-for="(img, index) in imgs" :key="index">
       <expandable-image :close-on-background-click="true" :src="require('../assets/mapeamento/' + img)"/>
     </p>
@@ -28,8 +24,7 @@ export default {
     }
   },
   tags: [
-    'JavaScript',
-    'Web'
+    'web'
   ],
   title: 'Mapeamento',
   route: 'mapeamento',

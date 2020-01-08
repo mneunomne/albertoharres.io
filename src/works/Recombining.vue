@@ -1,12 +1,7 @@
 <template>
   <div class="inner-cont">
-    <div class='row'>
-      <h1>Recombining Memories</h1>
-      <p>Janury 2016, Saint Petersburg, Russia</p>
-    </div>
-    <p class='row'>
-      Generative instalation made with Processing using the recolections of pictures and words from my stay in Russia in 2015.
-    </p>
+    <div class='row' v-html="$t('recombining.title')"/>
+    <div class='row' v-html="$t('recombining.text')"/>
     <p class='row'>
       <expandable-image :close-on-background-click="true" :src="require('../assets/recombining-memories/IMG_7708_1000.jpg')"/>
     </p>
@@ -17,7 +12,7 @@ export default {
   // work info
   tags: [
     'processing',
-    'instalation'
+    'generative'
   ],
   title: 'Recombining Memories',
   route: 'recombining-memories',

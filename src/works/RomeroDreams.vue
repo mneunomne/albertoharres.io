@@ -1,9 +1,7 @@
 <template>
   <div class="inner-cont">
-    <div class='row'>
-      <h1>Romero Dreams</h1>
-      <p>Experiments with style transfer using Romero Britto's style in famous paintings</p>
-    </div>
+    <div class='row' v-html="$t('romero_dreams.title')"/>
+    <div class='row' v-html="$t('romero_dreams.text')"/>
     <p class='row'>
       <expandable-image :close-on-background-click="true" :src="require('../assets/romero-dreams/retirantes_dreams2.png')"/>
     </p>
@@ -13,8 +11,8 @@
 export default {
   // work info
   tags: [
-    'AI',
-    'Neural Networks'
+    'ai',
+    'NeuralNetworks'
   ],
   title: 'Romero Dreams',
   route: 'romero-dreams',

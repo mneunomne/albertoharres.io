@@ -18,8 +18,8 @@
 export default {
   // work info
   tags: [
-    'AFRAME',
-    'Vue.js'
+    'aframe',
+    'vue'
   ],
   title: 'Superviz',
   route: 'superviz',

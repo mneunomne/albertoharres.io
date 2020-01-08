@@ -12,8 +12,8 @@
 export default {
   // work info
   tags: [
-    'JavaScript',
-    'Web'
+    'street-art',
+    'glitch'
   ],
   title: 'Mapeamento',
   route: 'mapeamento',

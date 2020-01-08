@@ -1,20 +1,7 @@
 <template>
   <div class="inner-cont">
-    <div class='row'>
-      <h1>Simbinoise</h1>
-      <p>
-        Simbinoise propõe uma interação poética entre seres humanos, tecnologia e natureza. 
-        A instalação cria uma ponte entre corpos orgânicos através de circuitos eletrônicos, os dispositivos artificiais traduzem a resistência elétrica dos corpos em sons, e expande em texturas sonoras a experiência sensível.
-      </p>
-      <p>
-        A instalação consiste em uma tradicional barraca de feira repleta de frutas ligadas a circuitos eletrônicos. 
-        Os circuitos proporcionam uma experiência singular de interação, na medida que as frutas são tocadas, sonoridades moduladas são emitidas por uma série de alto-falantes espalhados na barraca. 
-        Durante a interação os espectadores podem comer as frutas e fazer parte deste curto circuito antropofágico.
-      </p>
-      <p>
-        <a target="_" href="https://simbinoise.tumblr.com/">https://simbinoise.tumblr.com/</a>
-      </p>
-    </div>
+    <div class="row" v-html="$t('simbinoise.title')"/>
+    <div class="row" v-html="$t('simbinoise.text')"/>
     <p class='row'>
       <expandable-image :close-on-background-click="true" :src="require('../assets/simbinoise/mesa.jpg')"/>
     </p>
@@ -28,7 +15,7 @@ export default {
   // work info
   tags: [
     'sound',
-    'circuit bending'
+    'circuit-bending'
   ],
   title: 'Simbinoise',
   route: 'simbinoise',

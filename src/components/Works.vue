@@ -1,7 +1,9 @@
 <template>
   <div class="works">
     <div class="filters">
-      <a class="tag" @click="onClickTag(tag)" :class="{'active': currentFilter === tag}" v-for="(tag, index) in getAllTags" v-bind:key="index">#{{ tag }}</a>
+      <a class="tag" @click="onClickTag(tag)" :class="{'active': currentFilter === tag}" v-for="(tag, index) in getAllTags" v-bind:key="index">
+        {{ $t(tag) }}
+      </a>
     </div>
     <div class="links">
       <router-link :to="'/' + work.route" v-for="(work) in getAllWorks" v-bind:key="work.route">
@@ -67,12 +69,14 @@ export default {
   color: black
   cursor: pointer
   margin-right: 7px
-  user-select: none
+  // user-select: none
   display: inline-flex
+  text-decoration: underline
   &.active
     font-weight: bolder
   &:hover
-    text-decoration: underline
+    color: blue
+    // text-decoration: underline
 
 .links
   margin-top: 2em
