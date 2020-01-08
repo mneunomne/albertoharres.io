@@ -118,7 +118,7 @@ export default {
   },
   mounted () {
     this.allWorks = works
-    setTimeout(() => this.loaded = true, 1000)
+    setTimeout(() => this.loaded = true, 1)
   }
 }
 </script>
