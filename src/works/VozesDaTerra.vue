@@ -50,7 +50,7 @@ export default {
   ],
   title: 'Vozes da Terra',
   route: 'vozes-da-terra',
-  cover: require('../assets/vozesdaterra/fernando_pote-1.jpg'),
+  cover: require('../assets/vozesdaterra/thumbsquared.jpg'),
   // vue component
   name: 'vozes-da-terra'
 }

@@ -11,12 +11,12 @@
 export default {
   // work info
   tags: [
-    'arduíno',
+    'arduino',
     'sound',
   ],
   title: 'Itinerário Etimológico',
   route: 'itinerario-etimologico',
-  cover: require('../assets/carruagens/carruagens_thumb.jpg'),
+  cover: require('../assets/carruagens/museu-historico-nacional.jpg'),
   // vue component
   name: 'itinerario-etimologico'
 }

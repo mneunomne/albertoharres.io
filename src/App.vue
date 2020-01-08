@@ -25,7 +25,7 @@ export default {
     changeLocale (lang) {
       this.$root.$i18n.locale = lang
     }
-  },
+  }
 }
 </script>
 
@@ -90,9 +90,6 @@ p
 
 .fade-enter-active, .fade-leave-active
   transition: opacity .5s
-
-.fade-enter-active
-  opacity: 0
 
 .fade-enter, .fade-leave-to
   opacity: 0

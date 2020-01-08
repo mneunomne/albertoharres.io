@@ -1,6 +1,7 @@
 <template>
   <div class="box">
     <img :src="cover">
+    <!-- <span class="index">{{ index }}</span> -->
     <div class="title">
       <p>{{ title }}</p>
     </div>
@@ -12,16 +13,22 @@ export default {
   props: {
     cover: {
       type: String,
-      required: true
+      required: false
     },
     title: {
       type: String,
-      required: true
+      required: false
     },
     route: {
       type: String,
-      required: true
+      required: false
     },
+    fake: {
+      type: Boolean
+    },
+    index: {
+      type: Number
+    }
   }
 }
 </script>
@@ -59,4 +66,9 @@ export default {
       // filter: blur(5px)
     .title
       opacity: 1
+.index
+  position: absolute
+  color: black
+  z-index: 99999
+  background: white
 </style>

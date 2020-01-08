@@ -31,7 +31,8 @@ export default {
     'mapping',
     'processing',
     'kinect',
-    'performance'
+    'performance',
+    'openFrameworks'
   ],
   title: 'Central',
   route: 'central',

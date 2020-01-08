@@ -19,7 +19,9 @@ export default {
   // work info
   tags: [
     'aframe',
-    'vue'
+    'vue',
+    'vr',
+    'web'
   ],
   title: 'Superviz',
   route: 'superviz',
