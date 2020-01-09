@@ -64,11 +64,11 @@ const pt = {
   recombining: {
     title: `
       <h1>Recombining Memories</h1>
-      <p>Janury 2016, Saint Petersburg, Russia</p>
+      <p>Janury 2016, Galeria LAMPA, São Petersburg, Russia</p>
       `,
     text: `
       <p>
-        Generative instalation made with Processing using the recolections of pictures and words from my stay in Russia in 2015.
+        Generative instalation made with Processing using the recollections of pictures and words from my stay in Russia in 2015.
       </p>
       `
   },

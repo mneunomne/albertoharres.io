@@ -48,6 +48,7 @@ export default {
       transition: false,
       allWorks: [],
       loaded: false,
+      windowWidth: null
     }
   },
   computed: {
@@ -116,6 +117,11 @@ export default {
   mounted () {
     this.allWorks = works
     setTimeout(() => this.loaded = true, 1)
+    this.windowWidth = window.innerWidth
+    window.addEventListener('resize', (evt) => {
+      this.windowWidth = evt.target.innerWidth
+      this.$forceUpdate()
+    })
   }
 }
 </script>
