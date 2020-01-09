@@ -11,17 +11,17 @@
         <AudioBox
           :filename="require('../assets/vozesdaterra/menino_canto.mp3')"
           :title="'Crianças canto'"
-          :id="0"
+          :id="'0'"
         ></AudioBox>
       </p>
       <p class='row'>
-        <expandable-image :src="require('../assets/vozesdaterra/IMG_20180802_205823.jpg')"/>
+        <expandable-image :src="require('../assets/vozesdaterra/8e2177c5-2887-44db-9dca-cfbc9c3d72e2.jpg')"/>
       </p>
       <p class='row'>
         <AudioBox
           :filename="require('../assets/vozesdaterra/xoco-unknown.mp3')"
           :title="'Xocó'"
-          :id="1"
+          :id="'1'"
         ></AudioBox>
       </p>
     </div>

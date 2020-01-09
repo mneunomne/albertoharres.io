@@ -44,10 +44,6 @@ export default {
     type: {
       type: String
     },
-    index: {
-      type: Number,
-      required: true
-    },
     id: {
       type: String,
       required: true 

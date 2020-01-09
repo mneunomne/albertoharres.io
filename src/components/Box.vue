@@ -1,6 +1,8 @@
 <template>
   <div class="box">
-    <img :src="cover">
+    <transition name="fade" duration="500">
+      <img v-show="loaded" :src="cover" @load="onLoad">
+    </transition>
     <!-- <span class="index">{{ index }}</span> -->
     <div class="title">
       <p>{{ title }}</p>
@@ -29,6 +31,17 @@ export default {
     index: {
       type: Number
     }
+  },
+  data () {
+    return {
+      loaded: false
+    }
+  },
+  methods: {
+    onLoad (evt) {
+      this.loaded = true
+      console.log(this.title, 'image loaded!')
+    }
   }
 }
 </script>
@@ -38,8 +51,9 @@ export default {
   display: inline-flex
   width: 340px
   height: 340px
-  margin: 2px
+  margin: 1px 2px
   overflow: hidden
+  background: #80808038
   img
     object-fit: cover
     max-width: 100%

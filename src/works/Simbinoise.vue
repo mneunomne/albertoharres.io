@@ -19,7 +19,7 @@ export default {
   ],
   title: 'Simbinoise',
   route: 'simbinoise',
-  cover: require('../assets/simbinoise/contato.jpg'),
+  cover: require('../assets/simbinoise/simbi-thumb.jpg'),
   // vue component
   name: 'simbinoise'
 }

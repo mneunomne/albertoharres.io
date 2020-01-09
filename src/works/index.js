@@ -8,6 +8,7 @@ import Recombining from './Recombining.vue'
 import Mapeamento from './Mapeamento.vue'
 import RomeroDreams from './RomeroDreams.vue'
 import Superviz from './Superviz.vue'
+import Engie from './Engie.vue'
 
 export default [
   Vozes,
@@ -20,4 +21,5 @@ export default [
   Mapeamento,
   RomeroDreams,
   Superviz,
+  Engie
 ]

@@ -12,7 +12,8 @@ export default {
   // work info
   tags: [
     'ai',
-    'NeuralNetworks'
+    'NeuralNetworks',
+    'python'
   ],
   title: 'Romero Dreams',
   route: 'romero-dreams',

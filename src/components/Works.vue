@@ -74,13 +74,12 @@ export default {
           index++
         }
         return w
-      }).sort((a, b) => a.index - b.index)
+      })
+      // .sort((a, b) => a.index - b.index)
     }
   },
   methods: {
     onClickTag (tag) {
-      console.log('getBoxPositions', this.getBoxPositions())
-
       if (this.currentFilter !== tag) {
         this.currentFilter = tag
       } else {
@@ -103,12 +102,10 @@ export default {
       }).sort((a, b) => a.index - b.index)
     },
     getBoxPositions () {
-      console.log('get box position')
       return works.map((w, index) => {
-        console.log(this.$refs['box_' + index])
         if (this.$refs['box_' + index]) {
           return {
-            transform: `translate(${this.$refs['box_' + index][0].$el.offsetLeft - 2}px, ${this.$refs['box_' + index][0].$el.offsetTop - 2}px)`
+            transform: `translate(${this.$refs['box_' + index][0].$el.offsetLeft - 1}px, ${this.$refs['box_' + index][0].$el.offsetTop - 2}px)`
           }
         } else {
           return {transform: `translate(0px, 0px)`}
@@ -148,7 +145,9 @@ export default {
   position: absolute !important
   transition: all 0.5s
   opacity: 1
+  z-index: 10
   &.hide
+    z-index: 1
     opacity: 0
     // display: none
   &.transition

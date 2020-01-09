@@ -106,11 +106,13 @@ const en = {
       </p>`
   },
   wen: {
-    title: `<h1>When Speaking of Tongues</h1>`,
-    text: `
+    title: `
+      <h1>When Speaking of Tongues</h1>
       <p>
-        <b>Multimedia show made in collaboration with <a href="http://www.lotuslien.info/">Lotus Lien.</a></b>
+        <i>Multimedia show made in collaboration with <a href="http://www.lotuslien.info/">Lotus Lien.</a></i>
       </p>
+    `,
+    text: `
       <p>
         "When speaking of tongues" consisted of a range of experiments revolving around the relationship between body and language using different media: dance performance with kinect-based text projection, a VR instalation together with multiple drawings and video-mappings.
       </p>
@@ -122,6 +124,17 @@ const en = {
       </p>
     `,
     vr: `Virtual Reality emulating the exibition itself but invaded by 3d chinese dancing characters.`
+  },
+  engie: {
+    title: `
+      <h1>Engie - Showroom</h1>
+      <p>Insteractive Installation by Venosa Design</p>
+    `,
+    text: `
+      <p>A 3d mini-city was created showing the different solutions offered by <a target="_" href="https://www.engie.com.br/en/">Engie</a>.</p>
+      <p>Alberto Harres - Programming</p>
+      <p>2019</p>
+    `
   }
 }
 

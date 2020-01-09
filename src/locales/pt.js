@@ -133,6 +133,17 @@ const pt = {
       </p>
     `,
     vr: `Realidade Virtual simulando o próprio espaço de exposição.`
+  },
+  engie: {
+    title: `
+      <h1>Engie - Showroom</h1>
+      <p>Instalação Interativa pela Venosa Design</p>
+    `,
+    text: `
+      <p>Criamos uma mini-cidade 3d exemplificando as diferentes soluções oferecidas pela <a target="_" href="https://www.engie.com.br/en/">Engie</a>, com animações, imagens e vídeo informativos.</p>
+      <p>Alberto Harres - Programação</p>
+      <p>2019</p>
+    `
   }
 }
 /*

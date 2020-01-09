@@ -4,12 +4,8 @@ import App from './App.vue'
 import routes from './routes'
 import VueI18n from 'vue-i18n'
 import VueExpandableImage from 'vue-expandable-image'
-import VueWaveSurfer from 'vue-wave-surfer'
 import messages from './locales/'
 
-console.log('messages', messages)
-
-Vue.use(VueWaveSurfer)
 Vue.use(VueExpandableImage)
 Vue.use(VueI18n)
 
