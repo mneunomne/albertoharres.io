@@ -44,10 +44,13 @@ const en = {
     title: `<h1>Central</h1>`,
     text: `
     <p>
-      Projection mapping and direction of technology for the itinerant play "Central - uma peça paisagem em tantos movimentos" from the theater company <a href="https://www.instagram.com/companhiavolante/">Companhia Volante</a>
+      Projection mapping and direction of technology for the itinerant play "Central - uma peça paisagem em tantos movimentos" from the theater company <a href="https://www.instagram.com/companhiavolante/">Companhia Volante</a>.
     </p>
     <p>
-      2019
+      Photos by Lucas Santos, Maíra Barillo and Maria Ramiro.
+    </p>
+    <p>
+      2018
     </p>`
   },
   mapeamento: {

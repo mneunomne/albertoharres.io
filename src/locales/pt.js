@@ -47,13 +47,20 @@ const pt = {
   central: {
     title: `
       <h1>Central</h1>
+      <p>"Uma peça paisagem em tantos movimentos" da <a href="https://www.instagram.com/companhiavolante/">Companhia Volante</a></p>
     `,
     text: `
     <p>
-      Projeção mapeada e tecnologia para o espetáculo itinerante Central - uma peça paisagem em tantos movimentos da <a href="https://www.instagram.com/companhiavolante/">Companhia Volante</a>
+      Central é uma peça-paisagem que se desdobra pelo centro da cidade do Rio numa série de performances encadeadas por diferentes ativações tecnologicas, sendo o próprio espaço urbano e as camadas imagéticas aplicadas uma criatura em cena.
     </p>
     <p>
-      2019
+      A tecnologia de imagem da peça foi desenvolvida com o uso de ferramentas como Processing, OpenFrameworks e Kinect em parceria com <a href="https://inckolas.com/">Nickolas Borba</a>.
+    </p>
+    <p>
+      Fotos: Lucas Santos, Maíra Barillo e Maria Ramiro.
+    </p>
+    <p>
+      2018
     </p>`
   },
   mapeamento: {
