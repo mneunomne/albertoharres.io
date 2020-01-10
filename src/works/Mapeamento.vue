@@ -3,7 +3,7 @@
     <div class="row" v-html="$t('mapeamento.title')"/>
     <div class="row" v-html="$t('mapeamento.text')"/>
     <p class='row' v-for="(img, index) in imgs" :key="index">
-      <expandable-image :close-on-background-click="true" :src="require('../assets/mapeamento/' + img)"/>
+      <expandable-image :close-on-background-click="true" :src="'assets/mapeamento/' + img"/>
     </p>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   ],
   title: 'Mapeamento',
   route: 'mapeamento',
-  cover: require('../assets/mapeamento/thumb.jpg'),
+  cover: '../assets/mapeamento/thumb.jpg',
   // vue component
   name: 'mapeamento'
 }

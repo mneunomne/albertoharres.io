@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="about about-left">
-      <img class="profile" :src="require('../assets/profile.jpg')"/>
+      <img class="profile" src="assets/profile.jpg"/>
       <p>alberto.harres@gmail.com</p>
       <a target="_" href="https://www.instagram.com/mneu_nomne/" class="fa fa-instagram"></a>
       <a target="_" href="https://github.com/mneu_nomne" class="fa fa-github"></a>

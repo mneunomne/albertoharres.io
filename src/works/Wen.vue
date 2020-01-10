@@ -7,14 +7,14 @@
     </p>
     <p class="row">
       <video width="720" height="405" autoplay mute>
-        <source :src="require('../assets/wen/VID_20170308_015540441.mp4')" type="video/mp4"/> 
+        <source :src="'assets/wen/VID_20170308_015540441.mp4'" type="video/mp4"/> 
       </video>
     </p>
     <p class="row">
       <iframe width="720" height="405" src="https://www.youtube.com/embed/T5zpzSOWczs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </p>
     <p class='row'>
-      <img :src="require('../assets/wen/caracters.jpg')"/>
+      <img :src="'assets/wen/caracters.jpg'"/>
     </p>
     <p class="row">
       <iframe width="720" height="405" src="https://www.youtube.com/embed/TAgt8XNB1F4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -33,7 +33,7 @@ export default {
   ],
   title: 'When Speaking of Tongues',
   route: 'wen',
-  cover: require('../assets/wen/wen-thumb.gif'),
+  cover: 'assets/wen/wen-thumb.gif',
   // vue component
   name: 'wen'
 }

@@ -3,14 +3,14 @@
     <div class='row' v-html="$t('recombining.title')"/>
     <div class='row' v-html="$t('recombining.text')"/>
     <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="require('../assets/recombining-memories/IMG_7708_1000.jpg')"/>
-      <expandable-image :close-on-background-click="true" :src="require('../assets/recombining-memories/IMG_7711_1000.jpg')"/>
+      <expandable-image :close-on-background-click="true" :src="'assets/recombining-memories/IMG_7708_1000.jpg'"/>
+      <expandable-image :close-on-background-click="true" :src="'assets/recombining-memories/IMG_7711_1000.jpg'"/>
     </p>
     <p class='row gifs'>
-      <img :src="require('../assets/recombining-memories/gif_00.gif')"/>
-      <img :src="require('../assets/recombining-memories/gif_03.gif')"/>
-      <img :src="require('../assets/recombining-memories/gif_10.gif')"/>
-      <img :src="require('../assets/recombining-memories/gif_13.gif')"/>
+      <img :src="'assets/recombining-memories/gif_00.gif'"/>
+      <img :src="'assets/recombining-memories/gif_03.gif'"/>
+      <img :src="'assets/recombining-memories/gif_10.gif'"/>
+      <img :src="'assets/recombining-memories/gif_13.gif'"/>
     </p>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
   ],
   title: 'Recombining Memories',
   route: 'recombining-memories',
-  cover: require('../assets/recombining-memories/IMG_7716_1000.jpg'),
+  cover: 'assets/recombining-memories/IMG_7716_1000.jpg',
   // vue component
   name: 'recombining-memories'
 }

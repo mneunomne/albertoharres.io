@@ -4,22 +4,22 @@
       <div class="row" v-html="$t('vozes_da_terra.title')"/>
       <div class="row" v-html="$t('vozes_da_terra.text')"/>
       <p class='row grid'>
-        <expandable-image class="half" :src="require('../assets/vozesdaterra/criancas.jpg')"/>
-        <expandable-image class="half" :src="require('../assets/vozesdaterra/IMG_2416 (1).JPG')"/>
+        <expandable-image class="half" :src="'assets/vozesdaterra/criancas.jpg'"/>
+        <expandable-image class="half" :src="'assets/vozesdaterra/IMG_2416 (1).JPG'"/>
       </p>
       <p class='row'>
         <AudioBox
-          :filename="require('../assets/vozesdaterra/menino_canto.mp3')"
+          :filename="'assets/vozesdaterra/menino_canto.mp3'"
           :title="'Crianças canto'"
           :id="'0'"
         ></AudioBox>
       </p>
       <p class='row'>
-        <expandable-image :src="require('../assets/vozesdaterra/8e2177c5-2887-44db-9dca-cfbc9c3d72e2.jpg')"/>
+        <expandable-image :src=" 'assets/vozesdaterra/8e2177c5-2887-44db-9dca-cfbc9c3d72e2.jpg'"/>
       </p>
       <p class='row'>
         <AudioBox
-          :filename="require('../assets/vozesdaterra/xoco-unknown.mp3')"
+          :filename="'assets/vozesdaterra/xoco-unknown.mp3'"
           :title="'Xocó'"
           :id="'1'"
         ></AudioBox>
@@ -50,7 +50,7 @@ export default {
   ],
   title: 'Vozes da Terra',
   route: 'vozes-da-terra',
-  cover: require('../assets/vozesdaterra/thumbsquared.jpg'),
+  cover: 'assets/vozesdaterra/thumbsquared.jpg',
   // vue component
   name: 'vozes-da-terra'
 }
