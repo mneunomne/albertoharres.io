@@ -2,9 +2,16 @@
   <div class="inner-cont">
     <div class="row" v-html="$t('mapeamento.title')"/>
     <div class="row" v-html="$t('mapeamento.text')"/>
-    <p class='row' v-for="(img, index) in imgs" :key="index">
-      <expandable-image :close-on-background-click="true" :src="'assets/mapeamento/' + img"/>
-    </p>
+    <!-- gallery -->
+    <v-gallery :images="imgs" :index="index" @close="index = null"></v-gallery>
+    <div class="row row-gallery">
+      <img class="gallery-img-2"
+        v-for="(image, imageIndex) in imgs"
+        :src="image"
+        :key="imageIndex"
+        @click="index = imageIndex"
+      />
+    </div>
   </div>
 </template>
 <script>
@@ -13,14 +20,15 @@ export default {
   data () {
     return {
       imgs : [
-        'mapeamento-18.54.05.png',
-        'mapeamento-18.54.19.png',
-        'mapeamento-18.54.39.png',
-        'mapeamento-18.54.56.png',
-        'mapeamento-18.55.15.png',
-        'mapeamento-18.55.27.png',
-        'mapeamento-18.55.42.png'
-      ]
+        'assets/mapeamento/mapeamento-18.54.05.png',
+        'assets/mapeamento/mapeamento-18.54.19.png',
+        'assets/mapeamento/mapeamento-18.54.39.png',
+        'assets/mapeamento/mapeamento-18.54.56.png',
+        'assets/mapeamento/mapeamento-18.55.15.png',
+        'assets/mapeamento/mapeamento-18.55.27.png',
+        'assets/mapeamento/mapeamento-18.55.42.png'
+      ],
+      index: null
     }
   },
   tags: [

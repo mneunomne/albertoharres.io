@@ -7,25 +7,33 @@
         <source :src="'assets/central/MVI_6938-SITE.mp4'" type="video/mp4"/> 
       </video>
     </p>
-    <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="'assets/central/Peça Central Prévia Multiverso 30-08-18-54.jpg'"/>
-    </p>
-    <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="'assets/central/_MG_6961.jpeg'"/>
-    </p>
-    <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="'assets/central/_MG_6968.jpeg'"/>
-    </p>
-    <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="'assets/central/Peça Central Prévia Multiverso 30-08-18-3.jpg'"/>
-    </p>
-    <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="'assets/central/triangulo.jpeg'"/>
-    </p>
+    <!-- gallery -->
+    <v-gallery :images="imgs" :index="index" @close="index = null"></v-gallery>
+    <div class="row row-gallery">
+      <img class="gallery-img-2"
+        v-for="(image, imageIndex) in imgs"
+        :src="image"
+        :key="imageIndex"
+        @click="index = imageIndex"
+      />
+    </div>
   </div>
 </template>
 <script>
 export default {
+  data () {
+    return {
+      imgs: [
+        'assets/central/Peça Central Prévia Multiverso 30-08-18-54.jpg',
+        'assets/central/CENTRAL_MairaB063.jpg',
+        'assets/central/_MG_6961.jpeg',
+        'assets/central/_MG_6968.jpeg',
+        'assets/central/Peça Central Prévia Multiverso 30-08-18-3.jpg',
+        'assets/central/CENTRAL_MairaB023.jpg',
+      ],
+      index: null
+    }
+  },
   // work info
   tags: [
     'mapping',

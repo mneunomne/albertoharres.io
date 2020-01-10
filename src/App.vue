@@ -68,10 +68,10 @@ img
 .navbar
   position: relative
   font-size: 1.1em
-  padding-left: 32px
+  padding-left: 15px
   border-bottom: 1.0px solid #dedeef
   display: inline-block
-  width: calc(100% - 40px)
+  width: calc(100% - 15px)
   div
     display: inline-block
   .mainnav
@@ -104,6 +104,12 @@ img
   margin-left: auto
   margin-right: auto
   max-width: 100%
+  &-gallery
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    img
+      object-fit: cover
 
 .inner-cont
   padding: 10px
@@ -115,6 +121,11 @@ body>.expandable-image.expanded>img
 p
   font-size: 18px
   line-height: 1.35em
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
 
 .fade-enter-active, .fade-leave-active
   transition: opacity .5s
@@ -129,4 +140,18 @@ p
   background: transparent !important
   border: none !important
   font-family: monospace !important
+
+.gallery-img
+  &-1
+    width: 100%
+    margin-bottom: 5px
+  &-2
+    width: calc(50% - 10px)
+    margin-bottom: 10px
+  &-3
+    width: calc(33.3% - 15px)
+    margin-bottom: 5px
+
+video
+  max-width: 100%
 </style>
