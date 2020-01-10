@@ -5,6 +5,9 @@ import routes from './routes'
 import VueI18n from 'vue-i18n'
 import VueExpandableImage from 'vue-expandable-image'
 import messages from './locales/'
+import VueGallery from 'vue-gallery'
+
+Vue.component('v-gallery', VueGallery)
 
 Vue.use(VueExpandableImage)
 Vue.use(VueI18n)

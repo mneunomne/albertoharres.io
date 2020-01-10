@@ -94,7 +94,7 @@ img
 
 .container
   margin-bottom: 100px
-  margin-left: 8px
+  margin-left: 5px
   margin-right: 5px
   margin-top: 5px
 
@@ -114,6 +114,7 @@ body>.expandable-image.expanded>img
 
 p
   font-size: 18px
+  line-height: 1.35em
 
 .fade-enter-active, .fade-leave-active
   transition: opacity .5s
@@ -123,4 +124,9 @@ p
 
 .router-viewer
   transition: opacity .5s
+
+.next, .prev
+  background: transparent !important
+  border: none !important
+  font-family: monospace !important
 </style>
