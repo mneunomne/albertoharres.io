@@ -48,6 +48,7 @@ img
   border-bottom: 1.0px solid #dedeef
   display: inline-block
   width: 95%
+  max-width: 87vw
   div
     display: inline-block
   .mainnav
@@ -77,6 +78,7 @@ img
   line-height: 150%
   margin-left: auto
   margin-right: auto
+  max-width: 100%
 
 .inner-cont
   padding: 10px
