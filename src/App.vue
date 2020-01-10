@@ -6,9 +6,9 @@
         <router-link class="link" to='/works'>{{ $t('works') }}</router-link>
         <router-link class="link" to='/gallery'>{{ $t('gallery') }}</router-link>
       </div>
-      <div class="locales">
-        <span :class="{'active': $root.$i18n.locale === 'en'}" @click="changeLocale('en')">en</span>/
-        <span :class="{'active': $root.$i18n.locale === 'pt'}" @click="changeLocale('pt')">pt</span>
+      <div class="locales" @click="changeLocale()">
+        <span :class="{'active': $root.$i18n.locale === 'en'}">en</span>/
+        <span :class="{'active': $root.$i18n.locale === 'pt'}">pt</span>
       </div>
     </div>
     <div class="container">
@@ -21,9 +21,33 @@
 <script>
 export default {
   name: 'app',
+  created () {
+    let lang = window.localStorage.getItem('albertoharres_lang')
+    if (lang !== null && lang !== undefined) {
+       this.$root.$i18n.locale = lang
+    } else {
+      switch (navigator.language) {
+        case 'pt-BR':
+          this.$root.$i18n.locale = 'pt'
+          break;
+        case 'en-US':
+          this.$root.$i18n.locale = 'en'
+          break;
+        default:
+          this.$root.$i18n.locale = 'en'
+          break;
+      }
+    }
+  },
   methods: {
-    changeLocale (lang) {
-      this.$root.$i18n.locale = lang
+    changeLocale () {
+      if (this.$root.$i18n.locale === 'en') {
+        this.$root.$i18n.locale = 'pt'
+        window.localStorage.setItem('albertoharres_lang', 'pt')
+      } else {
+        this.$root.$i18n.locale = 'en'
+        window.localStorage.setItem('albertoharres_lang', 'en')
+      }
     }
   }
 }
@@ -47,16 +71,17 @@ img
   padding-left: 32px
   border-bottom: 1.0px solid #dedeef
   display: inline-block
-  width: 95%
-  max-width: 87vw
+  width: calc(100% - 40px)
   div
     display: inline-block
   .mainnav
     margin-bottom: 10px
   .locales
+    cursor: pointer
     display: inline-flex
     position: absolute
-    right: 0
+    right: 10px
+    user-select: none
     span.active
       font-weight: bold
 

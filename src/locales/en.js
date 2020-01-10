@@ -44,7 +44,7 @@ const en = {
     title: `<h1>Central</h1>`,
     text: `
     <p>
-      Projeção mapeada e tecnologia para o espetáculo itinerante Central - uma peça paisagem em tantos movimentos da <a href="https://www.instagram.com/companhiavolante/">Companhia Volante</a>
+      Projection mapping and direction of tecnology for the itinerant play "Central - uma peça paisagem em tantos movimentos" from the theater company <a href="https://www.instagram.com/companhiavolante/">Companhia Volante</a>
     </p>
     <p>
       2019
@@ -87,23 +87,29 @@ const en = {
   vozes_da_terra: {
     title: `<h1>Vozes da Terra</h1>`,
     text: `
-      <p>   
-        Projeto que busca através da união entre circuitos eletrônico-sonoros e potes de cerâmica indígena, uma forma diferente de armazenar, reproduzir e difundir a cultura oral indígena.
-      </p>
-      <p>   
-        O projeto começou como uma residência artística do programa Arte Eletrônica Indígena, junto à aldeia Pankararu em Tacaratu-PE.
-        Lá foi feito em colaboração com as artesães indígenas um pote especialmente feito para embarcar um dispositivo eletrônico capaz de escutar, gravar e reproduzir o que era dito ou cantado dentro dele.
-        Esse artefato circulou pela comunidade contando com a interação de jovens, anciãos e curandeiras da comunidade Pankararu.
-      </p>
-      <p>   
-        Junto com os outros projetos do programa da AEI, o pote foi exposto no MAM de Salvado-BA, e além de reproduzir os áudios gravados durante a residência, também pode gravar cantos e falas de outros povos indígenas presentes na exposição, fazendo do pote um artefato de intercâmbio cultural da cultura oral indígena.
-      </p>
-      <p>   
-        Esse projeto participou da exposição da British Accademy Summershow Case em junho de 2019.
+      <p>
+        This projects proposes through the union of the indigenous pottery and eletronic sound circuits a different approach on how to store, reproduce and difuse the brazilian indiginous oral culture.
       </p>
       <p>
-        Honorary prize at Ars Eletronica 2018 (link)
-      </p>`
+        It started as an art residency though the AEI (Eletronic Indigenous Art) program, which consisted of multiple artistical residency in indigenous communities in northeast Brazil with enfasis in eletronic art. 
+        In the case of the project "Vozes da Terra", the residency took place in the Pankararu indigenous community in Tacaraca, Perambuco.
+        There, in collaboration with the local Pankararu artisans, a ceramic pot was made especifically to acomodate an eletronic device with microfone and speakers capable of detecting, recording and reproducing what was said or sang inside the pot in an automated process. 
+        This artifact circulated around the community capturing the diversity of voices from Pankararu. From the elders to children from the local indigenous school, the pot captured and reproduced their voices, in an interactive way to store and share their own culture.
+      </p>
+      <p>
+        Together with the other projects contemplated by the AEI program, the pot was shown at the Museum of Modern Art of Salvador, Bahia (MAM - Salvador). During the exibition not only did the pot reproduce the sounds recorded while it was in Pankararu, but it was also able to record the voices from the other indigenous from different ethnic groupos people present there. Thus the pot was not only an amplifier from Pankararu's voices, but an artifact of exchange between different cultures and their voices.  
+      </p>
+      <p>   
+        In the summer of 2019 this artifact was shown at the British Academy Summer Showcase, together with 2 other projects from the AEI program. 
+      </p>
+      <p>
+        Honorary prize at Ars Eletronica 2018:</br>
+        <a href="https://ars.electronica.art/outofthebox/files/2019/08/cyberarts2019.pdf">https://ars.electronica.art/outofthebox/files/2019/08/cyberarts2019.pdf</a>  (page 200 and 201)
+      </p>
+      <p>
+        <a href="https://github.com/mneunomne/vozes-da-terra">GitHub Repository</a>
+      </p>
+      `
   },
   wen: {
     title: `
