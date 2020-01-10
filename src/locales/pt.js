@@ -45,7 +45,9 @@ const pt = {
       </p>`
   },
   central: {
-    title: `<h1>Central</h1>`,
+    title: `
+      <h1>Central</h1>
+    `,
     text: `
     <p>
       Projeção mapeada e tecnologia para o espetáculo itinerante Central - uma peça paisagem em tantos movimentos da <a href="https://www.instagram.com/companhiavolante/">Companhia Volante</a>

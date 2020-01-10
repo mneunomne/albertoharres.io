@@ -25,7 +25,7 @@ export default {
     padding: 0px
     padding-left: 20px
     padding-right: 20px
-    padding-top: 45px
+    padding-top: 40px
     text-align: center
   &-right
     display: inline-block
