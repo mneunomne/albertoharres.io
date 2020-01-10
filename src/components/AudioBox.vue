@@ -102,7 +102,7 @@ export default {
 .waveform-box {
   // width: 100%;
   &.loading {
-    background: url('../assets/loading.gif') center no-repeat;
+    background: url('/assets/loading.gif') center no-repeat;
     background-size: contain;
   }
 }

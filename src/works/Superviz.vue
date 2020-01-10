@@ -9,7 +9,7 @@
     </div>
     <p class="row">
       <video width="720" height="405" controls>
-        <source :src="'../assets/superviz/svapp15.mp4'" type="video/mp4"/> 
+        <source :src="'assets/superviz/svapp15.mp4'" type="video/mp4"/> 
       </video>
     </p>
   </div>
@@ -25,7 +25,7 @@ export default {
   ],
   title: 'Superviz',
   route: 'superviz',
-  cover: '../assets/superviz/SuperViz_01_thumb.jpg',
+  cover: 'assets/superviz/SuperViz_01_thumb.jpg',
   // vue component
   name: 'superviz'
 }

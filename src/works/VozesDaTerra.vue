@@ -30,14 +30,6 @@
 <script>
 import AudioBox from '../components/AudioBox.vue'
 
-'8e2177c5-2887-44db-9dca-cfbc9c3d72e2.jpg',
-'IMG_20180802_205823.jpg',
-'IMG_2416 (1).JPG',
-'IMG_2586.JPG',
-'criancas.jpg',
-'fernando_pote-1.jpg',
-'vozes_thumb.jpeg'
-
 export default {
   components: {
     AudioBox

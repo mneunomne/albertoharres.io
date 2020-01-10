@@ -1,6 +1,6 @@
 <template>
   <div class="gallery">
-    <expandable-image :close-on-background-click="true" class="gallery-item" v-for="(img, index) in imgs" :key="index" :src="require('../assets/gallery/' + img)"/>
+    <expandable-image :close-on-background-click="true" class="gallery-item" v-for="(img, index) in imgs" :key="index" :src="'assets/gallery/' + img"/>
   </div>
 </template>
 <script>

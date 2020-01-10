@@ -46,10 +46,4 @@ export default {
     max-height: 400px
 img
   max-width: 100%
-
-.header
-  width: 100%
-  height: 200px
-  background-size: contain
-  background-image: url('../assets/wen/IMG_20170322_171413517-ANIMATION.gif')
 </style>
