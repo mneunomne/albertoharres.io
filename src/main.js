@@ -23,6 +23,9 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   routes,
   linkExactActiveClass: 'active',
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 });
 
 new Vue({
