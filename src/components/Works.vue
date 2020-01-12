@@ -48,7 +48,8 @@ export default {
       transition: false,
       allWorks: [],
       loaded: false,
-      windowWidth: null
+      windowWidth: null,
+      timeout: false
     }
   },
   computed: {
@@ -112,6 +113,16 @@ export default {
           return {transform: `translate(0px, 0px)`}
         }
       })
+    },
+    resizeend (w) {
+      if (new Date() - this.rtime < 200) {
+          setTimeout(this.resizeend(w), 200);
+      } else {
+        console.log('hello')
+          this.timeout = false
+          this.windowWidth = w
+          this.$forceUpdate()
+      }
     }
   },
   mounted () {
@@ -119,8 +130,13 @@ export default {
     setTimeout(() => this.loaded = true, 1)
     this.windowWidth = window.innerWidth
     window.addEventListener('resize', (evt) => {
-      this.windowWidth = evt.target.innerWidth
-      this.$forceUpdate()
+      this.rtime = new Date();
+      if (this.timeout === false) {
+          this.timeout = true
+          setTimeout(() => {
+            this.resizeend(evt.target.innerWidth)
+          }, 200);
+      }
     })
   }
 }
