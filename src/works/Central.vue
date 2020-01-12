@@ -21,8 +21,8 @@ export default {
       imgs: [
         'assets/central/Peça Central Prévia Multiverso 30-08-18-54.jpg',
         'assets/central/CENTRAL_MairaB063.jpg',
-        'assets/central/_MG_6961__2.jpg',
-        'assets/central/_MG_6968__2.jpg',
+        'assets/central/MG_6961__2.jpg',
+        'assets/central/MG_6968__2.jpg',
         'assets/central/Peça Central Prévia Multiverso 30-08-18-3.jpg',
         'assets/central/CENTRAL_MairaB023.jpg',
       ],
