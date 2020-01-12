@@ -134,13 +134,13 @@ export default {
   color: black
   cursor: pointer
   margin-right: 7px
+  margin-left: 5px
   user-select: none
   display: inline-flex
-  text-decoration: underline
   &.active
     font-weight: bolder
   &:hover
-    color: blue
+    text-decoration: underline
     // text-decoration: underline
 
 .boxes

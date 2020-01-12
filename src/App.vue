@@ -149,4 +149,15 @@ video
     left: 0
     width: 100%
     height: 100%
+
+.loading-box
+  background: linear-gradient(100deg, #e8e8e8 33%, #fbfbfb 50%, #e8e8e8 66%)
+  background-size: 400% 400%
+  animation: gradientAnimate 1.5s ease infinite
+
+@keyframes gradientAnimate
+  0%
+    background-position: 5% 0%
+  100%
+    background-position: 96% 100%
 </style>

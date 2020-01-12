@@ -2,7 +2,8 @@
   <div>
     <v-gallery :images="imgs" :index="index" @close="index = null"></v-gallery>
     <div class="row-gallery">
-      <div class="wrap" v-for="(image, imageIndex) in imgs" :key="imageIndex" :class="`gallery-img-${cols}`">
+      <div class="wrap loading-box" v-for="(image, imageIndex) in imgs" :key="imageIndex"
+        :class="`gallery-img-${getCurCols}`">
         <img
           :src="image"
           @click="index = imageIndex"
@@ -14,6 +15,10 @@
   </div>
 </template>
 <script>
+
+const breakpoints3 = 800
+const breakpoints2 = 420
+
 export default {
   name: 'ImageGallery',
   props: {
@@ -29,13 +34,25 @@ export default {
   data () {
     return {
       index: null,
-      loaded:[]
+      loaded:[],
+      curWidth: window.innerWidth
     }
   },
   computed: {
     getLoaded () {
       console.log('getLoaded', this.loaded)
       return this.loaded
+    },
+    getCurCols () {
+      var cols
+      cols = this.cols
+      if (this.curWidth < breakpoints3) {
+        cols = Math.min(2, this.cols)
+      }
+      if (this.curWidth < breakpoints2) {
+        cols = Math.min(1, this.cols)
+      }
+      return cols
     }
   },
   methods: {
@@ -47,6 +64,9 @@ export default {
   },
   mounted () {
     this.loaded = this.imgs.map(m => false)
+    window.addEventListener('resize', (evt) => {
+      this.curWidth = evt.target.innerWidth
+    })
   }
 }
 </script>
@@ -68,7 +88,6 @@ export default {
   justify-content: space-around
   .wrap
     display: flex
-    background: #80808038
     img
       opacity: 0
       transition: 0.5s
