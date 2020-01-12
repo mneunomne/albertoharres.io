@@ -3,19 +3,24 @@
     <div class='row' v-html="$t('recombining.title')"/>
     <div class='row' v-html="$t('recombining.text')"/>
     <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="'assets/recombining-memories/IMG_7708_1000.jpg'"/>
-      <expandable-image :close-on-background-click="true" :src="'assets/recombining-memories/IMG_7711_1000.jpg'"/>
-    </p>
-    <p class='row gifs'>
-      <img :src="'assets/recombining-memories/gif_00.gif'"/>
-      <img :src="'assets/recombining-memories/gif_03.gif'"/>
-      <img :src="'assets/recombining-memories/gif_10.gif'"/>
-      <img :src="'assets/recombining-memories/gif_13.gif'"/>
+      <image-gallery :imgs="imgs" :cols="2"/>
     </p>
   </div>
 </template>
 <script>
 export default {
+  data () {
+    return {
+      imgs: [
+        'assets/recombining-memories/IMG_7708_1000.jpg',
+        'assets/recombining-memories/IMG_7711_1000.jpg',
+        'assets/recombining-memories/gif_00.gif',
+        'assets/recombining-memories/gif_03.gif',
+        'assets/recombining-memories/gif_10.gif',
+        'assets/recombining-memories/gif_13.gif',
+      ]
+    }
+  },
   // work info
   tags: [
     'processing',

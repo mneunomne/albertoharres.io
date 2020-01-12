@@ -4,7 +4,7 @@
       <h1>Print na Rua</h1>
     </div>
     <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="'assets/capte-me/1018112-img_7590.jpg'"/>
+      <image-gallery :imgs="['assets/capte-me/1018112-img_7590.jpg']" :cols="1"/>
     </p>
   </div>
 </template>

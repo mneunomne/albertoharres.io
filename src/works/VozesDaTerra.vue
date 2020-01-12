@@ -3,10 +3,6 @@
     <div class="inner-cont">
       <div class="row" v-html="$t('vozes_da_terra.title')"/>
       <div class="row" v-html="$t('vozes_da_terra.text')"/>
-      <p class='row grid'>
-        <expandable-image class="half" :src="'assets/vozesdaterra/criancas.jpg'"/>
-        <expandable-image class="half" :src="'assets/vozesdaterra/IMG_2416 (1).JPG'"/>
-      </p>
       <p class='row'>
         <AudioBox
           :filename="'assets/vozesdaterra/menino_canto.mp3'"
@@ -15,7 +11,7 @@
         ></AudioBox>
       </p>
       <p class='row'>
-        <expandable-image :src=" 'assets/vozesdaterra/8e2177c5-2887-44db-9dca-cfbc9c3d72e2.jpg'"/>
+        <image-gallery :imgs="imgs" :cols="2"/>
       </p>
       <p class='row'>
         <AudioBox
@@ -33,6 +29,18 @@ import AudioBox from '../components/AudioBox.vue'
 export default {
   components: {
     AudioBox
+  },
+  data () {
+    return {
+      imgs: [
+        'assets/vozesdaterra/8e2177c5-2887-44db-9dca-cfbc9c3d72e2.jpg',
+        'assets/vozesdaterra/fernando_pote-1.jpg',
+        'assets/vozesdaterra/criancas.jpg',
+        'assets/vozesdaterra/IMG_2416 (1).JPG',
+        'assets/vozesdaterra/IMG_20180802_205823.jpg',
+        'assets/vozesdaterra/IMG_2586.JPG',
+      ]
+    }
   },
   // work info
   tags: [

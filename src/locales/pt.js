@@ -51,7 +51,7 @@ const pt = {
     `,
     text: `
     <p>
-      Central é uma peça-paisagem que se desdobra pelo centro da cidade do Rio numa série de performances encadeadas por diferentes ativações tecnologicas, sendo o próprio espaço urbano e as camadas imagéticas aplicadas uma criatura em cena.
+      Central é uma peça-paisagem que se desdobra pelo centro da cidade do Rio numa série de performances encadeadas por diferentes ativações tecnológicas, sendo o próprio espaço urbano e as camadas imagéticas uma criatura em cena.
     </p>
     <p>
       A tecnologia de imagem da peça foi desenvolvida com o uso de ferramentas como Processing, OpenFrameworks e Kinect em parceria com <a href="https://inckolas.com/">Nickolas Borba</a>.
@@ -110,7 +110,7 @@ const pt = {
       </p>
       <p>   
         O projeto começou como uma residência artística do programa Arte Eletrônica Indígena, junto à aldeia Pankararu em Tacaratu-PE.
-        Lá foi feito em colaboração com as artesães indígenas um pote especialmente feito para embarcar um dispositivo eletrônico capaz de escutar, gravar e reproduzir o que era dito ou cantado dentro dele.
+        Lá foi feito em colaboração com as artesãs indígenas um pote especialmente feito para embarcar um dispositivo eletrônico capaz de escutar, gravar e reproduzir o que era dito ou cantado dentro dele.
         Esse artefato circulou pela comunidade contando com a interação de jovens, anciãos e curandeiras da comunidade Pankararu.
       </p>
       <p>   
@@ -127,15 +127,17 @@ const pt = {
     title: `
       <h1>When Speaking of Tongues</h1>
       <p>
-        <i>Exposição multimídia feito em colaboração com <a href="http://www.lotuslien.info/">Lotus Lien.</a></i>
+        Exposição multimídia feito em colaboração com <a href="http://www.lotuslien.info/">Lotus Lien</a>, com performance de Randy De La Cruz e Maria Koffman.
       </p>
       `,
     text: `
       <p>
-        "When speaking of tongues" consisted of a range of experiments revolving around the relationship between body and language using different media: dance performance with kinect-based text projection, a VR instalation together with multiple drawings and video-mappings.
-      </p>
-      <p>
-        Performance coreográfica com projeção mapeada com kinect. Performers Maria Koffman e Randy De La Cruz.
+        A exposição consistia de vários experimentos performáticos e tecnológicos que orbitavam a relação entre a linguagem e os corpos:
+        <ul>
+        <li>Performance de dança com projeção de palavras e caracters, mapeando os corpos em tempo real utilizando com kinect;</li></br>
+        <li>Uma experiência de realidade virtual simulando o próprio espaço expositivo porém substituindo os corpos presentes por caracters;</li></br>
+        <li>Desenhos no espaço real e vídeos dos desenhos no espaço virtual da exposição;</li></br>
+        </ul>
       </p>
       <p>
         2017, Cooper Union, Cidade de Nova York.

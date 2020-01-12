@@ -8,18 +8,13 @@
       </video>
     </p>
     <!-- gallery -->
-    <v-gallery :images="imgs" :index="index" @close="index = null"></v-gallery>
-    <div class="row row-gallery">
-      <img class="gallery-img-2"
-        v-for="(image, imageIndex) in imgs"
-        :src="image"
-        :key="imageIndex"
-        @click="index = imageIndex"
-      />
-    </div>
+    <p class="row">
+      <image-gallery :imgs="imgs" :cols="2"/>
+    </p>
   </div>
 </template>
 <script>
+
 export default {
   data () {
     return {

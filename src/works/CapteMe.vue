@@ -3,15 +3,17 @@
     <div class='row' v-html="$t('capteme.title')"/>
     <div class="row" v-html="$t('capteme.text')"/>
     <p class='row'>
-      <expandable-image :close-on-background-click="true" class="img2" src="assets/capte-me/Screen Shot 2016-05-15 at 14.16.25.png"/>
-    </p>
-    <p class='row'>
-      <expandable-image :close-on-background-click="true" class="img2" src="assets/capte-me/1018112-img_7590.jpg"/>
+      <image-gallery :imgs="imgs" :cols="1"/>
     </p>
   </div>
 </template>
 <script>
 export default {
+  data () {
+    return {
+      imgs : ["assets/capte-me/Screen Shot 2016-05-15 at 14.16.25.png", "assets/capte-me/1018112-img_7590.jpg"]
+    }
+  },
   // work info
   tags: [
     'openFrameworks'
