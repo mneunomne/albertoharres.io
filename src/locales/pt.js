@@ -11,7 +11,16 @@ const pt = {
   pottery: 'cerâmica',
   sound: 'som',
   vr: 'realidade virtual',
-  generative: 'generativo',
+  python: 'python',
+  processing: 'processing',
+  performance: 'performance',
+  vue: 'vue',
+  openFramworks: 'openFramworks',
+  kinect: 'kinect',
+  generative: 'generative',
+  'circuit-bending': 'circuit-bending',
+  arduino: 'arduino',
+  aframe: 'aframe',
   // end tags
   about_text: `
     <h1>Alberto Harres</h1>

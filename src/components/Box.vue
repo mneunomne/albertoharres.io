@@ -67,7 +67,7 @@ export default {
     color: white
     height: 100%
     width: 100%
-    backgruound: linear-gradient(transparent 50%, #000000c4)
+    background: linear-gradient(transparent 50%, #000000c4)
     p
       position: absolute
       bottom: 0

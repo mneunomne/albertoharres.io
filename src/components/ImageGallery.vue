@@ -66,6 +66,7 @@ export default {
     this.loaded = this.imgs.map(m => false)
     window.addEventListener('resize', (evt) => {
       this.curWidth = evt.target.innerWidth
+      this.$forceUpdate()
     })
   }
 }
@@ -75,6 +76,8 @@ export default {
   &-1
     width: 100%
     margin-bottom: 5px
+    img
+      width: 100%
   &-2
     width: calc(50% - 10px)
     margin-bottom: 10px
