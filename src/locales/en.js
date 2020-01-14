@@ -9,6 +9,17 @@ const en = {
   pottery: 'pottery',
   sound: 'sound',
   vr: 'virtual reality',
+  wen: 'wen',
+  python: 'python',
+  processing: 'processing',
+  performance: 'performance',
+  vue: 'vue',
+  openFramworks: 'openFramworks',
+  kinect: 'kinect',
+  generative: 'generative',
+  'circuit-bending': 'circuit-bending',
+  arduino: 'arduino',
+  aframe: 'aframe',
   // end tags
   about_text: `
     <h1>Alberto Harres</h1>

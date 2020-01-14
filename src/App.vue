@@ -104,21 +104,12 @@ img
   margin-left: auto
   margin-right: auto
   max-width: 100%
-  &-gallery
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-around
-    img
-      object-fit: cover
 
 .inner-cont
   padding: 10px
   width: 97%
 
-body>.expandable-image.expanded>img
-  object-fit: none !important
-
-p
+p, li
   font-size: 18px
   line-height: 1.35em
 
@@ -141,17 +132,32 @@ a
   border: none !important
   font-family: monospace !important
 
-.gallery-img
-  &-1
-    width: 100%
-    margin-bottom: 5px
-  &-2
-    width: calc(50% - 10px)
-    margin-bottom: 10px
-  &-3
-    width: calc(33.3% - 15px)
-    margin-bottom: 5px
+iframe
+  max-width: 100%
 
 video
   max-width: 100%
+  height: auto
+
+.embeded-video
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.loading-box
+  background: linear-gradient(100deg, #e8e8e8 33%, #fbfbfb 50%, #e8e8e8 66%)
+  background-size: 400% 400%
+  animation: gradientAnimate 1.5s ease infinite
+
+@keyframes gradientAnimate
+  0%
+    background-position: 5% 0%
+  100%
+    background-position: 96% 100%
 </style>

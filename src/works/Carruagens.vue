@@ -3,7 +3,7 @@
     <div class="row" v-html="$t('carruagens.title')"/>
     <div class="row" v-html="$t('carruagens.text')"/>
     <p class='row'>
-      <expandable-image :close-on-background-click="true" src="assets/carruagens/museu-historico-nacional.jpg"/>
+      <image-gallery :imgs="['assets/carruagens/museu-historico-nacional.jpg']" :cols="1"/>
     </p>
     <p class='row'>
       <AudioBox

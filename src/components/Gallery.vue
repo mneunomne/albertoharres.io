@@ -1,20 +1,6 @@
 <template>
   <div class="gallery">
-    <v-gallery :images="imgs" :index="index" @close="index = null"></v-gallery>
-    <!--
-    <div class="image" v-for="(image, imageIndex) in imgs" :key="imageIndex" @click="index = imageIndex"
-      :style="{ backgroundImage: `url('/${image}')`}"
-    ></div>
-    -->
-    <img class="gallery-img"
-      v-for="(image, imageIndex) in imgs"
-      :src="image"
-      :key="imageIndex"
-      @click="index = imageIndex"
-    />
-    <!--
-      <expandable-image :close-on-background-click="true" class="gallery-item" v-for="(img, index) in imgs" :key="index" :src="'assets/gallery/' + img"/>
-    -->
+    <image-gallery :imgs="imgs" :cols="3"/>
   </div>
 </template>
 <script>

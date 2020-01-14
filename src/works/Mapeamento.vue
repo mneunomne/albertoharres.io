@@ -3,14 +3,8 @@
     <div class="row" v-html="$t('mapeamento.title')"/>
     <div class="row" v-html="$t('mapeamento.text')"/>
     <!-- gallery -->
-    <v-gallery :images="imgs" :index="index" @close="index = null"></v-gallery>
-    <div class="row row-gallery">
-      <img class="gallery-img-2"
-        v-for="(image, imageIndex) in imgs"
-        :src="image"
-        :key="imageIndex"
-        @click="index = imageIndex"
-      />
+    <div class="row">
+      <image-gallery :imgs="imgs" :cols="3"/>
     </div>
   </div>
 </template>
@@ -27,8 +21,7 @@ export default {
         'assets/mapeamento/mapeamento-18.55.15.png',
         'assets/mapeamento/mapeamento-18.55.27.png',
         'assets/mapeamento/mapeamento-18.55.42.png'
-      ],
-      index: null
+      ]
     }
   },
   tags: [

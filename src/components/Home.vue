@@ -20,13 +20,12 @@ export default {
   display: inline-block
   &-left
     vertical-align: top
-    width: 320px
     margin: 0px
     padding: 0px
-    padding-left: 20px
-    padding-right: 20px
-    padding-top: 40px
+    margin-top: 40px
     text-align: center
+    max-width: 100%
+    width: 360px
   &-right
     display: inline-block
     vertical-align: top
@@ -50,4 +49,9 @@ export default {
 
 .fa:hover
   opacity: 0.7
+
+@media (max-width: 840px)
+  .about-right
+    max-width: 100%
+    min-width: calc(100% - 15px)
 </style>

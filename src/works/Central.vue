@@ -8,26 +8,21 @@
       </video>
     </p>
     <!-- gallery -->
-    <v-gallery :images="imgs" :index="index" @close="index = null"></v-gallery>
-    <div class="row row-gallery">
-      <img class="gallery-img-2"
-        v-for="(image, imageIndex) in imgs"
-        :src="image"
-        :key="imageIndex"
-        @click="index = imageIndex"
-      />
-    </div>
+    <p class="row">
+      <image-gallery :imgs="imgs" :cols="2"/>
+    </p>
   </div>
 </template>
 <script>
+
 export default {
   data () {
     return {
       imgs: [
         'assets/central/Peça Central Prévia Multiverso 30-08-18-54.jpg',
         'assets/central/CENTRAL_MairaB063.jpg',
-        'assets/central/_MG_6961.jpeg',
-        'assets/central/_MG_6968.jpeg',
+        'assets/central/MG_6961__2.jpg',
+        'assets/central/mar.jpg',
         'assets/central/Peça Central Prévia Multiverso 30-08-18-3.jpg',
         'assets/central/CENTRAL_MairaB023.jpg',
       ],

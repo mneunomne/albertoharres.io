@@ -37,6 +37,9 @@
 import works from '../works/'
 import Box from './Box.vue'
 
+const breakpoints3 = 800
+const breakpoints2 = 420
+
 export default {
   name: 'Works',
   components: {
@@ -48,7 +51,10 @@ export default {
       transition: false,
       allWorks: [],
       loaded: false,
-      windowWidth: null
+      windowWidth: null,
+      timeout: false,
+      lastTime: 0,
+      cols: 3,
     }
   },
   computed: {
@@ -77,6 +83,17 @@ export default {
         return w
       })
       // .sort((a, b) => a.index - b.index)
+    },
+    getCurCols () {
+      var cols
+      cols = 3
+      if (this.windowWidth < breakpoints3) {
+        cols = Math.min(2, this.cols)
+      }
+      if (this.windowWidth < breakpoints2) {
+        cols = Math.min(1, this.cols)
+      }
+      return cols
     }
   },
   methods: {
@@ -105,23 +122,43 @@ export default {
     getBoxPositions () {
       return works.map((w, index) => {
         if (this.$refs['box_' + index]) {
+          let el = this.$refs['box_' + index][0].$el
           return {
-            transform: `translate(${this.$refs['box_' + index][0].$el.offsetLeft - 1}px, ${this.$refs['box_' + index][0].$el.offsetTop - 2}px)`
+            transform: `translate(${el.offsetLeft - 1}px, ${el.offsetTop - 2}px)`,
+            width: `${el.offsetWidth}px`,
+            height: `${el.offsetHeight}px`,
           }
         } else {
-          return {transform: `translate(0px, 0px)`}
+          return {
+            transform: `translate(0px, 0px)`
+          }
         }
       })
+    },
+    onResize (evt) {
+      this.lastTime = new Date().getTime()
+      setTimeout(() => {
+        let now = new Date().getTime()
+        if (now - this.lastTime >= 300) {
+          this.windowWidth = window.innerWidth
+          this.$forceUpdate()
+        }
+      }, 300)
     }
   },
   mounted () {
     this.allWorks = works
     setTimeout(() => this.loaded = true, 1)
     this.windowWidth = window.innerWidth
-    window.addEventListener('resize', (evt) => {
-      this.windowWidth = evt.target.innerWidth
-      this.$forceUpdate()
-    })
+    window.addEventListener('resize', this.onResize)
+  },
+  beforeDestroy() {
+     window.removeEventListener('resize', this.onResize)
+  },
+  watch: {
+    windowWidth (val) {
+
+    }
   }
 }
 </script>
@@ -134,13 +171,13 @@ export default {
   color: black
   cursor: pointer
   margin-right: 7px
+  margin-left: 5px
   user-select: none
   display: inline-flex
-  text-decoration: underline
   &.active
     font-weight: bolder
   &:hover
-    color: blue
+    text-decoration: underline
     // text-decoration: underline
 
 .boxes
@@ -163,8 +200,29 @@ export default {
   position: absolute
   top: 0px
   pointer-events: none
+  display: flex
+  flex-wrap: wrap
   .box-fake
+    transition: none
     position: relative !important
-    opacity: 0
+    opacity: 0.0
+    width: calc(100vw - 50px)
+    height: calc(100vw - 50px)
+
+@media (min-width: 501px)
+  .box-fake
+    width: calc(50vw - 32px) !important
+    height: calc(50vw - 32px) !important
+
+@media (min-width: 900px)
+  .box-fake
+    width: calc(33.3vw - 32px) !important
+    height: calc(33.3vw - 32px) !important
+
+
+@media (min-width: 1200px)
+  .box-fake
+    width: calc(25vw - 32px) !important
+    height: calc(25vw - 32px) !important
 
 </style>

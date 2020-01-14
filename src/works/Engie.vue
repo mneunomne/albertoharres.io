@@ -3,7 +3,7 @@
     <div class="row" v-html="$t('engie.title')"/>
     <div class="row" v-html="$t('engie.text')"/>
     <p class='row'>
-      <expandable-image :close-on-background-click="true" :src="'assets/engie/home3D_3.jpg'"/>
+      <image-gallery :imgs="['assets/engie/home3D_3.jpg']" :cols="1"/>
     </p>
     <p class="row">
       <video width="720" height="405" autoplay loop muted>

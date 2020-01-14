@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="box loading-box">
     <transition name="fade" duration="500">
       <img v-show="loaded" :src="cover" @load="onLoad">
     </transition>
@@ -53,7 +53,6 @@ export default {
   height: 340px
   margin: 1px 2px
   overflow: hidden
-  background: #80808038
   img
     object-fit: cover
     max-width: 100%
@@ -68,7 +67,7 @@ export default {
     color: white
     height: 100%
     width: 100%
-    background: rgba(0, 0, 0, 0.5)
+    background: linear-gradient(transparent 50%, #000000c4)
     p
       position: absolute
       bottom: 0
