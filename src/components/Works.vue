@@ -206,24 +206,29 @@ export default {
     transition: none
     position: relative !important
     opacity: 0.0
-    margin-bottom: 3px
-    width: calc(100vw - 50px)
-    height: calc(100vw - 50px)
+    width: calc(100vw - 60px)
+    height: calc(100vw - 60px)
 
 @media (min-width: 501px)
   .box-fake
-    width: calc(50vw - 32px) !important
-    height: calc(50vw - 32px) !important
+    width: calc(50vw - 40px) !important
+    height: calc(50vw - 40px) !important
 
 @media (min-width: 900px)
   .box-fake
-    width: calc(33.3vw - 32px) !important
-    height: calc(33.3vw - 32px) !important
+    width: calc(33.3vw - 40px) !important
+    height: calc(33.3vw - 40px) !important
 
 
 @media (min-width: 1200px)
   .box-fake
-    width: calc(25vw - 32px) !important
-    height: calc(25vw - 32px) !important
+    width: calc(25vw - 40px) !important
+    height: calc(25vw - 40px) !important
+
+@media (min-width: 1600px)
+  .box-fake
+    margin-bottom: 3px
+    width: calc(20vw - 28px) !important
+    height: calc(20vw - 28px) !important
 
 </style>
