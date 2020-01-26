@@ -206,6 +206,7 @@ export default {
     transition: none
     position: relative !important
     opacity: 0.0
+    margin-bottom: 3px
     width: calc(100vw - 50px)
     height: calc(100vw - 50px)
 
