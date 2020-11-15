@@ -5,6 +5,7 @@
         <router-link class="link" to='/'>alberto harres</router-link>
         <router-link class="link" to='/works'>{{ $t('works') }}</router-link>
         <router-link class="link" to='/gallery'>{{ $t('gallery') }}</router-link>
+        <router-link class="link" to='/notes'>{{ $t('notes') }}</router-link>
       </div>
       <div class="locales" @click="changeLocale()">
         <span :class="{'active': $root.$i18n.locale === 'en'}">en</span>/
