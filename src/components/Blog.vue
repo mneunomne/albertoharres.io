@@ -1,8 +1,17 @@
 <template>
   <div>
-    <iframe id="iframe-blog" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://mneunomne.github.io/blog-eleventy/"/>
+    <iframe id="iframe-blog" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" :src="'https://mneunomne.github.io/blog-eleventy/?var=' + rand"/>
   </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      rand: Math.floor(Math.random() * 1000)
+    }
+  }
+}
+</script>
 <style lang="sass" scoped>
 #iframe-blog
   width: 100%
