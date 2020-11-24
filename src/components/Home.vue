@@ -4,7 +4,7 @@
       <img class="profile" src="assets/profile.jpg"/>
       <p>alberto.harres@gmail.com</p>
       <a target="_" href="https://www.instagram.com/mneu_nomne/" class="fa fa-instagram"></a>
-      <a target="_" href="https://github.com/mneu_nomne" class="fa fa-github"></a>
+      <a target="_" href="https://github.com/mneunomne" class="fa fa-github"></a>
     </div>
     <div class="about about-right" v-html="$t('about_text')">
     </div>
