@@ -83,6 +83,9 @@ const pt = {
     title: `
       <h1>Recombining Memories</h1>
       <p>Janury 2016, Galeria LAMPA, São Petersburg, Russia</p>
+      <p>
+        <i>Feito em colaboração com Mria Prosphora.</i>
+      </p>
       `,
     text: `
       <p>
